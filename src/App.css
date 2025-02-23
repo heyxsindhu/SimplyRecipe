@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Pastel gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for Login, Register, and Home */
+.container {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffafbd;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffc3a0;
+}
+
+.navbar {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Soft gradient */
+  padding: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 8px;
+}
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Gradient Background */
+  position: fixed; /* Fix Navbar at Top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full Width */
+  z-index: 1000; /* Ensure Navbar is on Top */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+/* Ensure Navbar Content is Centered */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Mobile Navigation Button */
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Ensure Content Doesn't Overlap Navbar */
+body {
+  margin: 0;
+  padding-top: 70px; /* Adjust this if navbar height changes */
+}
+
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Initially hidden */
+  }
+
+  .navbar.show .navbar-nav {
+    display: flex; /* Show when toggled */
+  }
+}
+
